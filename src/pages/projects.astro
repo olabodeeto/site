@@ -5,25 +5,31 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 
 <BaseLayout title = "Projects">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Projects Header</div>
+      <div class="text-3xl w-full font-bold mb-2 bg-[#55D687] text-white p-2">Projects</div>
   </div>
 
-  <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="NEW"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
+  
+   <HorizontalCard
+      title="Klasshour"
+      img="/kh.png"
+      desc="Klasshour is an instant out-of-classroom online edutech platform that connects students to solutions to classwork, and assignments, preparing students for internal and external exams through independent tutors scattered across the African continent."
+      url="https://www.klasshour.com/"
+      badge=""
+    />
+    <div class="divider my-0"></div>
+    <br/>
 
-  <div>
+     <HorizontalCard
+      title="Qiid Commerce"
+      img="/qiid.png"
+      desc="An online market place"
+      url="https://qiid.vercel.app/"
+      badge=""
+    />
+    <div class="divider my-0"></div>
+    <br/>
+
+  <!-- <div>
     <div class="text-3xl w-full font-bold mb-5 mt-10">Projects Header</div>
   </div>
 
@@ -34,18 +40,6 @@ import HorizontalCard from "../components/HorizontalCard.astro";
     url="#"
     badge="FOSS"
   />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 4"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 5"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
+  <div class="divider my-0"></div> -->
+  
 </BaseLayout>

@@ -7,57 +7,61 @@ const posts = (await getCollection('blog')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 
-const last_posts = posts.slice(0, 3);
+const last_posts = posts.slice(0, 1);
 ---
 
 <BaseLayout>
 
     <div class="pb-12 mt-5">
       <div class="text-xl py-1">Hey there 👋</div>
-      <div class="text-5xl font-bold">I'm Manuel Ernesto</div>
+      <div class="text-5xl font-bold">I'm Olabode Eto</div>
       <div class="text-3xl py-3 font-bold">Software Engineer and Entrepreneur</div>
       <div class="py-2">
         <text class="text-lg">
-          I made this template for everyone who needs to create a personal website easily and quickly. This template includes Project Section, CV Section, Store, Paginated Blog, RSS Feed, SEO Friendly, Responsive Desing and 29 Visual themes. I hope you find it useful!
+         I am a Software Engineer and ReactJs specialist with proven years of experience building and shipping scalable and beautiful applications.
           </text
         >
       </div>
       <div class="mt-8">
-        <a class="btn" href="https://twitter.com/manuelernestog" target="_blank"> Let's connect!</a>
-        <a href="https://github.com/manuelernestog/astro-modern-personal-website" target="_blank" class="btn btn-outline ml-5"> Get This template</a>
+        <!-- <a class="btn" href="https://twitter.com/manuelernestog" target="_blank"> Let's connect!</a> -->
+        <a href="https://twitter.com/codebreed" target="_blank" class="btn btn-outline ml-5"> Let's connect</a>
       </div>
     </div>
 
     <div>
-      <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
+
+      
+    </div>
+
+    <div>
+      <div class="text-3xl w-full font-bold mb-2 bg-[#55D687] text-white p-2">Projects</div>
     </div>
 
     <HorizontalCard
-      title="Demo Project 1"
-      img="/post_img.webp"
-      desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      url="#"
-      badge="NEW"
+      title="Klasshour"
+      img="/kh.png"
+      desc="Klasshour is an instant out-of-classroom online edutech platform that connects students to solutions to classwork, and assignments, preparing students for internal and external exams through independent tutors scattered across the African continent."
+      url="https://www.klasshour.com/"
+      badge=""
     />
     <div class="divider my-0"></div>
+    <br/>
+
+
     <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
+      title="Qiid Commerce"
+      img="/qiid.png"
+      desc="An online market place"
+      url="https://qiid.vercel.app/"
+      badge=""
+    />
     <div class="divider my-0"></div>
-    <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
-  />
+    <br/>
+   
 
 
     <div>
-      <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
+      <div class="text-3xl w-full font-bold mb-2 bg-[#55D687] text-white p-2">Latest from blog</div>
     </div>
 
     {
